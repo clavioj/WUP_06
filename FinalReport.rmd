@@ -48,7 +48,13 @@ The barchart tells us that people believe that the bigbang theory is not indepen
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+table1 <- xtabs(~BIGBANG + POSTLIFE,data=GSS)
+rowPerc(table1)
+colPerc(table1)
+```
 
+The numerical results tells us that most people say that people believe that the big bang is independent of belief in an after life.
 
 ## Inferential Results
 
